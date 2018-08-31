@@ -9,9 +9,7 @@ router.get('/', function(req, res, next) {
         if (err) throw err;
         obj = JSON.parse(data);
         res.render('index', {
-            data: obj.title,
-            data: obj.desc,
-            data: obj.img,
+            data: obj
         });
     });
 });
